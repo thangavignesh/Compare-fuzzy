@@ -11,6 +11,7 @@ if($global:counter.ContainsKey($key)) {
 }
 
 ------ https://rosettacode.org/wiki/Handle_a_signal#PowerShell
+------ http://poshcode.org/542
 
 Try
 {
