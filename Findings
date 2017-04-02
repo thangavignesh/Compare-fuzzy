@@ -61,4 +61,5 @@ IF(!(Test-Path $registryPath))
     PS C:\> (Get-ItemProperty -Path HKCU:\Software\ScriptingGuys\Scripts -Name version).version
 
 --------https://support.microsoft.com/en-us/help/137890/how-to-create-a-user-defined-service
--------https://blogs.technet.microsoft.com/heyscriptingguy/2009/11/05/hey-scripting-guy-can-i-start-an-event-based-on-when-a-registry-value-is-changed/
+--------https://blogs.technet.microsoft.com/heyscriptingguy/2009/11/05/hey-scripting-guy-can-i-start-an-event-based-on-when-a-registry-value-is-changed/
+--------https://support.microsoft.com/en-us/help/137890/how-to-create-a-user-defined-service
