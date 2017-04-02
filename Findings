@@ -63,3 +63,22 @@ IF(!(Test-Path $registryPath))
 --------https://support.microsoft.com/en-us/help/137890/how-to-create-a-user-defined-service
 --------https://blogs.technet.microsoft.com/heyscriptingguy/2009/11/05/hey-scripting-guy-can-i-start-an-event-based-on-when-a-registry-value-is-changed/
 --------https://support.microsoft.com/en-us/help/137890/how-to-create-a-user-defined-service
+-------Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+ServiceName = 'Serenade'
+$arrService = Get-Service -Name $ServiceName
+
+while ($arrService.Status -ne 'Running')
+{
+
+    Start-Service $ServiceName
+    write-host $arrService.status
+    write-host 'Service starting'
+    Start-Sleep -seconds 60
+    $arrService.Refresh()
+    if ($arrService.Status -eq 'Running')
+    {
+        Write-Host 'Service is now Running'
+    }
+
+}
