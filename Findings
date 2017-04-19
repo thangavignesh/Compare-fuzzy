@@ -1,6 +1,7 @@
 Perfect example:
 http://stackoverflow.com/questions/29066742/watch-file-for-changes-and-run-command-with-powershell
 http://gsexdev.blogspot.in/2011/02/creating-inbox-rules-with-ews-managed.html
+http://www.independentsoft.de/exchangewebservices/tutorial/getrules.html
 
 $global:counter = @{}
 
